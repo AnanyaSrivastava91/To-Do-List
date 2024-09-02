@@ -4,11 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 body{
-    background-color: rgb(232, 238, 238);
+    background-color: rgb(5, 88, 59);
+    /* background: radial-gradient(circle at center, #ff7e5f, #feb47b); */
 }
 
 .container{
@@ -43,7 +44,7 @@ body{
     background-color: #3da33d;
     color: #fff;
     font-weight: 700;
-    margin-left: 8px;
+    margin-left: 10px;
     cursor: pointer;
     padding: 12px 24px;
 }
@@ -51,10 +52,9 @@ body{
 .input-container input[type="button"]:hover{
     background-color: #60b160;
 }
-
 ul{
     width: 70%;
-    max-width: 450px;
+    max-width: 950px;
     /* display: flex;
     justify-content: center;
     flex-direction: column;
@@ -66,9 +66,9 @@ ul li{
     cursor: pointer;
     margin-block-end: 12px;
     border-radius: 8px;
-    border: 0.125px solid #a19f9f;
+    border: 1px solid #a19f9f;
     padding: 6px 12px;
-    background-color: #ffffff;
+    background-color:aliceblue;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,7 +76,7 @@ ul li{
 }
 
 ul li:hover{
-    background-color: #cbcaca;
+    background-color: #7dbc72;
 }
 
 ul li p{
@@ -94,9 +94,13 @@ ul li p{
 }
 
 .deleteBtn{
-    color: #ff0000;
+    color: #e90000;
 }
 
 .editBtn{
     color: #008000;
+}
+h1{
+    font-weight: 800;
+    color: #fff;
 }
