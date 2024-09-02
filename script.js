@@ -8,7 +8,7 @@ let editTodo = null;
 const addTodo = () => {
     const inputText = inputBox.value.trim();
     if (inputText.length <= 0) {
-        alert("You must write something in your to do");
+        alert("You have to insert something nigga");
         return false;
     }
 
@@ -46,7 +46,7 @@ const addTodo = () => {
     }
 }
 
-// Function to update : (Edit/Delete) todo
+// function to update //
 const updateTodo = (e) => {
     if (e.target.innerHTML === "Remove") {
         todoList.removeChild(e.target.parentElement);
@@ -61,7 +61,7 @@ const updateTodo = (e) => {
     }
 }
 
-// Function to save local todo
+//to save locally
 const saveLocalTodos = (todo) => {
     let todos;
     if (localStorage.getItem("todos") === null) {
@@ -74,7 +74,6 @@ const saveLocalTodos = (todo) => {
     localStorage.setItem("todos", JSON.stringify(todos));
 }
 
-// Function to get local todo
 const getLocalTodos = () => {
     let todos;
     if (localStorage.getItem("todos") === null) {
@@ -84,20 +83,20 @@ const getLocalTodos = () => {
         todos = JSON.parse(localStorage.getItem("todos"));
         todos.forEach(todo => {
 
-            //Creating p tag
+            //paragraph creation//
             const li = document.createElement("li");
             const p = document.createElement("p");
             p.innerHTML = todo;
             li.appendChild(p);
 
 
-            // Creating Edit Btn
+            // edit button creation//
             const editBtn = document.createElement("button");
             editBtn.innerText = "Edit";
             editBtn.classList.add("btn", "editBtn");
             li.appendChild(editBtn);
 
-            // Creating Delete Btn
+            // delete button working//
             const deleteBtn = document.createElement("button");
             deleteBtn.innerText = "Remove";
             deleteBtn.classList.add("btn", "deleteBtn");
@@ -108,7 +107,7 @@ const getLocalTodos = () => {
     }
 }
 
-// Function to delete local todo
+// delete local stored data//
 const deleteLocalTodos = (todo) => {
     let todos;
     if (localStorage.getItem("todos") === null) {
