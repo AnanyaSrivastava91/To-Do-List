@@ -8,8 +8,11 @@
         }
 
         body {
-         background-color: rgb(5, 88, 59);
+         /* background-color: rgb(5, 88, 59); */
             /* background: radial-gradient(circle at center, #ff7e5f, #feb47b); */
+            background-image: url(background.jpeg);
+            background-size: cover;
+            
         }
 
         .container {
